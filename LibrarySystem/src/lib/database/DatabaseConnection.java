@@ -10,9 +10,9 @@ public class DatabaseConnection {
 	public static Connection getConnection() throws Exception {
 		try {
 			String driver = "com.mysql.cj.jdbc.Driver";
-			String url = "jdbc:mysql://localhost:3306/cen4333libdb";
-			String username = "LibUser";
-			String password = "LibAcct";
+			String url = "jdbc:mysql://localhost:3306/**DBNAME**";
+			String username = "**USERNAME**";
+			String password = "**PASSWORD**";
 			Class.forName(driver);
 
 			Connection conn = DriverManager.getConnection(url, username, password);
